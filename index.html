@@ -51,7 +51,6 @@
 <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
 </head>
 <body>
 	<div class="fh5co-loader"></div>
@@ -81,25 +80,6 @@
 					<img class="fh5co-img" src="images/MJHW/notification.jpg">
 				</div>
 		</div>
-		<div id="fh5co-event" class="fh5co-bg">
-				<div class = "Profile_icon">
-					<img class="Profile_icon_img" src ="images/icon/groom.jpg"/>
-					<div class="bnt_icon"><a href ="tel:010-9395-1757"><img class="btn_icon_img_1" src="images/icon/groom_phone.jpg"/></a><a href ="sms:010-9395-1757"><img class="btn_icon_img_2" src="images/icon/groom_sms.jpg"/></a></div>
-				</div>
-				<div class = "Profile_icon">
-					<img class="Profile_icon_img" src ="images/icon/bride.jpg"/>
-					<div class="bnt_icon"><a href ="tel:010-3493-9301"><img class="btn_icon_img_1" src="images/icon/bride_phone.jpg"/></a><a href ="sms:010-3493-9301"><img class="btn_icon_img_2" src="images/icon/bride_sms.jpg"/></a></div>
-				</div>
-				<div class = "Profile_icon" style = "margin-top:20px">
-					<img class="Profile_icon_img" src ="images/icon/groom_parent.jpg"/>
-					<div class="bnt_icon"><a href ="tel:010-9395-1757"><img class="btn_icon_img_1" src="images/icon/groom_phone.jpg"/></a><a href ="tel:010-9395-1757"><img class="btn_icon_img_2" src="images/icon/groom_phone.jpg"/></a><a href ="sms:010-9395-1757"><img class="btn_icon_img_1" src="images/icon/groom_sms.jpg"/></a><a href ="sms:010-9395-1757"><img class="btn_icon_img_2" src="images/icon/groom_sms.jpg"/></a></div>
-				</div>
-				<div class = "Profile_icon" style = "margin-top:20px">
-					<img class="Profile_icon_img" src ="images/icon/bride_parent.jpg"/>
-					<div class="bnt_icon"><a href ="tel:010-3493-9301"><img class="btn_icon_img_1" src="images/icon/bride_phone.jpg"/></a><a href ="tel:010-3493-9301"><img class="btn_icon_img_2" src="images/icon/bride_phone.jpg"/></a><a href ="sms:010-3493-9301"><img class="btn_icon_img_1" src="images/icon/bride_sms.jpg"/></a><a href ="sms:010-3493-9301"><img class="btn_icon_img_2" src="images/icon/bride_sms.jpg"/></a></div>
-				</div>
-		</div>
-
 		<div id="fh5co-testimonial">
 			<div class="row">
 				<div class="row animate-box">
@@ -173,6 +153,78 @@
 				</div>
 			</div>
 		</div>
+		<div id="fh5co-event" class="fh5co-bg">
+				<div id="map" style="margin-top:150px; width:100%;height:350px;"></div>
+				<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=43ddd1fa336e35a91ff845d9f0e91a7c"></script>
+	<script>
+		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+		  mapOption = { 
+		        center: new kakao.maps.LatLng(35.561517, 129.348001), // 지도의 중심좌표
+		        level: 4 // 지도의 확대 레벨
+		    };
+	
+		var map = new kakao.maps.Map(mapContainer, mapOption);
+
+		var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png', // 마커이미지의 주소입니다    
+		    imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
+		    imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+		// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+		var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+		    markerPosition = new kakao.maps.LatLng(35.561517, 129.348001); // 마커가 표시될 위치입니다
+
+		// 마커를 생성합니다
+		var marker = new kakao.maps.Marker({
+		  position: markerPosition,
+		  image: markerImage // 마커이미지 설정 
+		});
+
+		// 마커가 지도 위에 표시되도록 설정합니다
+		marker.setMap(map);  
+
+		// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+		var content = '<div class="customoverlay">' +
+		    '  <a href="https://map.kakao.com/link/map/1486209965" target="_blank">' +
+		    '    <span class="title">동천컨벤션</span>' +
+		    '  </a>' +
+		    '</div>';
+
+		// 커스텀 오버레이가 표시될 위치입니다 
+		var position = new kakao.maps.LatLng(35.561517, 129.348001);  
+
+		// 커스텀 오버레이를 생성합니다
+		var customOverlay = new kakao.maps.CustomOverlay({
+		    map: map,
+		    position: position,
+		    content: content,
+		    yAnchor: 1 
+		});
+	</script>
+		</div>
+		<div id="fh5co-event" class="fh5co-bg">
+				<div class="fn5co-div-img">
+					<img class="fh5co-img" src="images/MJHW/addressInfo.jpg">
+				</div>
+		</div>
+		
+		<div id="fh5co-event" class="fh5co-bg"  style="padding-top:50px;">
+				<div class = "Profile_icon">
+					<img class="Profile_icon_img" src ="images/icon/groom.jpg"/>
+					<div class="bnt_icon"><a href ="tel:010-9395-1757"><img class="btn_icon_img_1" src="images/icon/groom_phone.jpg"/></a><a href ="sms:010-9395-1757"><img class="btn_icon_img_2" src="images/icon/groom_sms.jpg"/></a></div>
+				</div>
+				<div class = "Profile_icon">
+					<img class="Profile_icon_img" src ="images/icon/bride.jpg"/>
+					<div class="bnt_icon"><a href ="tel:010-3493-9301"><img class="btn_icon_img_1" src="images/icon/bride_phone.jpg"/></a><a href ="sms:010-3493-9301"><img class="btn_icon_img_2" src="images/icon/bride_sms.jpg"/></a></div>
+				</div>
+				<div class = "Profile_icon" style = "margin-top:50px">
+					<img class="Profile_icon_img" src ="images/icon/groom_parent.jpg"/>
+					<div class="bnt_icon"><a href ="tel:010-9395-1757"><img class="btn_icon_img_1" src="images/icon/groom_phone.jpg"/></a><a href ="tel:010-9395-1757"><img class="btn_icon_img_2" src="images/icon/groom_phone.jpg"/></a><a href ="sms:010-9395-1757"><img class="btn_icon_img_1" src="images/icon/groom_sms.jpg"/></a><a href ="sms:010-9395-1757"><img class="btn_icon_img_2" src="images/icon/groom_sms.jpg"/></a></div>
+				</div>
+				<div class = "Profile_icon" style = "margin-top:50px">
+					<img class="Profile_icon_img" src ="images/icon/bride_parent.jpg"/>
+					<div class="bnt_icon"><a href ="tel:010-3493-9301"><img class="btn_icon_img_1" src="images/icon/bride_phone.jpg"/></a><a href ="tel:010-3493-9301"><img class="btn_icon_img_2" src="images/icon/bride_phone.jpg"/></a><a href ="sms:010-3493-9301"><img class="btn_icon_img_1" src="images/icon/bride_sms.jpg"/></a><a href ="sms:010-3493-9301"><img class="btn_icon_img_2" src="images/icon/bride_sms.jpg"/></a></div>
+				</div>
+		</div>
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
@@ -233,7 +285,6 @@
 			enableUtc : false
 		});
 	</script>
-
 </body>
 </html>
 
