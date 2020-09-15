@@ -3,7 +3,7 @@
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
-  font-style: normal;
+  font-style: YDIYMjO360;
 }
 /* =======================================================
 *
@@ -229,8 +229,9 @@ h1, h2, h3, h4, h5, h6, figure {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  position: relative;
+  position: relative; 
 }
+
 
 .fh5co-bg {
   background-position: center center;
@@ -238,6 +239,7 @@ h1, h2, h3, h4, h5, h6, figure {
   float: left;
   position: relative;
 }
+
 
 .fh5co-video {
   height: 450px;
@@ -1867,6 +1869,8 @@ form label {
   transition: 0.5s;
 }
 .Profile_icon{
+	max-width: 100%;
+  	height: auto;
 	background-image : url('images/icon/background_color.jpg'); 
 	background-position:center;
 	background-repeat:no-repeat;
@@ -1875,16 +1879,25 @@ form label {
 	float: left;
 	width : 50%;
 }
+
+.Profile_icon_left{
+	padding-left :5%;
+}
+.Profile_icon_right{
+	padding-right :5%;
+}
+
 .Profile_icon_img{
-	width : 100%;
-	height : 100%;
-	padding-left: 5%;
-	padding-right: 5%;
+  max-width: 100%;
+  height: auto;
+  width:60%;
 }
 .btn_icon{
 	display: inline;
 	float: left;
 	width : 50%;
+	text-align: center;
+	margin-top: 7%;
 }
 .btn_icon_img{
 	width : 50%;
@@ -1894,19 +1907,26 @@ form label {
 	padding-top : 3%;
 }
 .btn_icon_img_1{
-	width : 50%;
-	height : 100%;
-	padding-left: 5%;
-	padding-right: 1%;
-	padding-top : 3%;
+	max-width: 100%;
+  	height: auto;
+  	width: 35%;
+    margin-right: 13%;
+	/* width: 35%;
+    height: 100%;
+    padding-left: 10%;
+    padding-top: 10%; */
+
 }
 
 .btn_icon_img_2{
-	width : 50%;
+	max-width: 100%;
+  	height: auto;
+  	width: 35%;
+    margin-left: 13%;
+	/* width : 35%;
 	height : 100%;
-	padding-left: 1%;
-	padding-right: 5%;
-	padding-top : 3%;
+	padding-right: 10%;
+	padding-top : 10%; */
 }
 
 .customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
