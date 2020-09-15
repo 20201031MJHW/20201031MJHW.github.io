@@ -166,7 +166,7 @@
 
 				var map = new kakao.maps.Map(mapContainer, mapOption);
 
-				var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png', // 마커이미지의 주소입니다    
+				var imageSrc = 'images/icon/marker.png', // 마커이미지의 주소입니다    
 				imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
 				imageOption = {
 					offset : new kakao.maps.Point(27, 69)
@@ -188,7 +188,7 @@
 				marker.setMap(map);
 
 				// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-				var content = '<div class="customoverlay">'
+				var content = '<div class="customoverlay" style="width: 107%">'
 						+ '  <a href="https://map.kakao.com/link/map/1486209965" target="_blank">'
 						+ '    <span class="title">동천컨벤션</span>' + '  </a>'
 						+ '</div>';
