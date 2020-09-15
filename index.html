@@ -55,7 +55,7 @@
 <body>
 	<div class="fh5co-loader"></div>
 	<div id="page">
-		<div id="fh5co-event" class="fh5co-bg">
+		<!--<div id="fh5co-event" class="fh5co-bg">
 				<div class="fn5co-div-img">
 					<img class="fh5co-img" src="images/MJHW/main.jpg">
 				</div>
@@ -79,13 +79,17 @@
 				<div class="fn5co-div-img">
 					<img class="fh5co-img" src="images/MJHW/notification.jpg">
 				</div>
+		</div> -->
+		<div id="fh5co-event" class="fh5co-bg">
+			<div class="fn5co-div-img">
+				<img class="fh5co-img" src="images/MJHW/all.jpg">
+			</div>
 		</div>
 		<div id="fh5co-testimonial">
 			<div class="row">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<span>Best Wishes</span>
-						<h2>Wedding Gallery</h2>
+						<h2>포토갤러리</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -124,26 +128,6 @@
 								</div>
 								<div class="item">
 									<div class="fn5co-div-img">
-										<img class="fh5co-img" src="images/MJHW/main.jpg" >
-									</div>
-								</div>
-								<div class="item">
-									<div class="fn5co-div-img">
-										<img class="fh5co-img" src="images/MJHW/main.jpg" >
-									</div>
-								</div>
-								<div class="item">
-									<div class="fn5co-div-img">
-										<img class="fh5co-img" src="images/MJHW/main.jpg" >
-									</div>
-								</div>
-								<div class="item">
-									<div class="fn5co-div-img">
-										<img class="fh5co-img" src="images/MJHW/main.jpg">
-									</div>
-								</div>
-								<div class="item">
-									<div class="fn5co-div-img">
 										<img class="fh5co-img" src="images/MJHW/main.jpg">
 									</div>
 								</div>
@@ -154,89 +138,208 @@
 			</div>
 		</div>
 		<div id="fh5co-event" class="fh5co-bg">
-				<div id="map" style="margin-top:150px; width:100%;height:600px;"></div>
-				<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=43ddd1fa336e35a91ff845d9f0e91a7c"></script>
-	<script>
-		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-		  mapOption = { 
-		        center: new kakao.maps.LatLng(35.561517, 129.348001), // 지도의 중심좌표
-		        level: 3 // 지도의 확대 레벨
-		    };
-	
-		var map = new kakao.maps.Map(mapContainer, mapOption);
-
-		var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png', // 마커이미지의 주소입니다    
-		    imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
-		    imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-
-		// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-		var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-		    markerPosition = new kakao.maps.LatLng(35.561517, 129.348001); // 마커가 표시될 위치입니다
-
-		// 마커를 생성합니다
-		var marker = new kakao.maps.Marker({
-		  position: markerPosition,
-		  image: markerImage // 마커이미지 설정 
-		});
-
-		// 마커가 지도 위에 표시되도록 설정합니다
-		marker.setMap(map);  
-
-		// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-		var content = '<div class="customoverlay">' +
-		    '  <a href="https://map.kakao.com/link/map/1486209965" target="_blank">' +
-		    '    <span class="title">동천컨벤션</span>' +
-		    '  </a>' +
-		    '</div>';
-
-		// 커스텀 오버레이가 표시될 위치입니다 
-		var position = new kakao.maps.LatLng(35.561517, 129.348001);  
-
-		// 커스텀 오버레이를 생성합니다
-		var customOverlay = new kakao.maps.CustomOverlay({
-		    map: map,
-		    position: position,
-		    content: content,
-		    yAnchor: 1 
-		});
-	</script>
+			<div class="fn5co-div-img">
+				<img class="fh5co-img" src="images/MJHW/location.jpg">
+			</div>
 		</div>
 		<div id="fh5co-event" class="fh5co-bg">
-				<div class="fn5co-div-img">
-					<img class="fh5co-img" src="images/MJHW/addressInfo.jpg">
-				</div>
-		</div>
-		
-		<div id="fh5co-event" class="fh5co-bg"  style="padding-top:50px;">
-				<div class = "Profile_icon">
-					<img class="Profile_icon_img" src ="images/icon/groom.jpg"/>
-					<div class="bnt_icon"><a href ="tel:010-9395-1757"><img class="btn_icon_img_1" src="images/icon/groom_phone.jpg"/></a><a href ="sms:010-9395-1757"><img class="btn_icon_img_2" src="images/icon/groom_sms.jpg"/></a></div>
-				</div>
-				<div class = "Profile_icon">
-					<img class="Profile_icon_img" src ="images/icon/bride.jpg"/>
-					<div class="bnt_icon"><a href ="tel:010-3493-9301"><img class="btn_icon_img_1" src="images/icon/bride_phone.jpg"/></a><a href ="sms:010-3493-9301"><img class="btn_icon_img_2" src="images/icon/bride_sms.jpg"/></a></div>
-				</div>
-				<div class = "Profile_icon" style = "margin-top:50px">
-					<img class="Profile_icon_img" src ="images/icon/groom_parent.jpg"/>
-					<div class="bnt_icon"><a href ="tel:010-9395-1757"><img class="btn_icon_img_1" src="images/icon/groom_phone.jpg"/></a><a href ="tel:010-9395-1757"><img class="btn_icon_img_2" src="images/icon/groom_phone.jpg"/></a><a href ="sms:010-9395-1757"><img class="btn_icon_img_1" src="images/icon/groom_sms.jpg"/></a><a href ="sms:010-9395-1757"><img class="btn_icon_img_2" src="images/icon/groom_sms.jpg"/></a></div>
-				</div>
-				<div class = "Profile_icon" style = "margin-top:50px">
-					<img class="Profile_icon_img" src ="images/icon/bride_parent.jpg"/>
-					<div class="bnt_icon"><a href ="tel:010-3493-9301"><img class="btn_icon_img_1" src="images/icon/bride_phone.jpg"/></a><a href ="tel:010-3493-9301"><img class="btn_icon_img_2" src="images/icon/bride_phone.jpg"/></a><a href ="sms:010-3493-9301"><img class="btn_icon_img_1" src="images/icon/bride_sms.jpg"/></a><a href ="sms:010-3493-9301"><img class="btn_icon_img_2" src="images/icon/bride_sms.jpg"/></a></div>
-				</div>
-		</div>
+			<div id="map" style=" width: 100%; height: 600px;"></div>
+			<script type="text/javascript"
+				src="//dapi.kakao.com/v2/maps/sdk.js?appkey=43ddd1fa336e35a91ff845d9f0e91a7c"></script>
+			<script>
+				var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+				mapOption = {
+					center : new kakao.maps.LatLng(35.561517, 129.348001), // 지도의 중심좌표
+					level : 3
+				// 지도의 확대 레벨
+				};
 
-	<footer id="fh5co-footer" role="contentinfo">
-		<div class="container">
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-					<img class="fh5co-img" src="images/icon/copyright.jpg"/>
+				var map = new kakao.maps.Map(mapContainer, mapOption);
+
+				var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png', // 마커이미지의 주소입니다    
+				imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
+				imageOption = {
+					offset : new kakao.maps.Point(27, 69)
+				}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+				// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+				var markerImage = new kakao.maps.MarkerImage(imageSrc,
+						imageSize, imageOption), markerPosition = new kakao.maps.LatLng(
+						35.561517, 129.348001); // 마커가 표시될 위치입니다
+
+				// 마커를 생성합니다
+				var marker = new kakao.maps.Marker({
+					position : markerPosition,
+					image : markerImage
+				// 마커이미지 설정 
+				});
+
+				// 마커가 지도 위에 표시되도록 설정합니다
+				marker.setMap(map);
+
+				// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+				var content = '<div class="customoverlay">'
+						+ '  <a href="https://map.kakao.com/link/map/1486209965" target="_blank">'
+						+ '    <span class="title">동천컨벤션</span>' + '  </a>'
+						+ '</div>';
+
+				// 커스텀 오버레이가 표시될 위치입니다 
+				var position = new kakao.maps.LatLng(35.561517, 129.348001);
+
+				// 커스텀 오버레이를 생성합니다
+				var customOverlay = new kakao.maps.CustomOverlay({
+					map : map,
+					position : position,
+					content : content,
+					yAnchor : 1
+				});
+			</script>
+		</div>
+		<div id="fh5co-event" class="fh5co-bg">
+			<div class="fn5co-div-img">
+				<img class="fh5co-img" src="images/MJHW/addressInfo.jpg">
+			</div>
+		</div>
+		<div id="fh5co-event" class="fh5co-bg" style="padding-top: 30%; background-image: url('../images/icon/background.jpg');" >
+			<!-- 신랑 -->
+			<div class="Profile_icon">
+				<div class = "Profile_icon_left">
+					<div align="center">
+						<img class="Profile_icon_img" src="images/icon/groom.jpg" />
+					</div>
+					<div class = "btn_icon">
+						<a href="tel:010-9395-1757"><img align="right" class="btn_icon_img_1" src="images/icon/phone.jpg" /></a>
+					</div>
+					<div class = "btn_icon">
+						<a href="sms:010-9395-1757"><img align="left" class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+					</div>
 				</div>
 			</div>
-
-
+			<!-- 신부 -->
+			<div class="Profile_icon">
+				<div class = "Profile_icon_right">
+					<div align="center">
+						<img  class = "Profile_icon_img" src="images/icon/bride.jpg" />
+					</div>
+					<div class="btn_icon">
+						<a href="tel:010-3493-9301"><img align="right" class="btn_icon_img_1" src="images/icon/phone.jpg" /></a>
+					</div>
+					<div class="btn_icon">
+						<a href="sms:010-3493-9301"><img align="left" class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+					</div>
+				</div>
+			</div>
+			<!-- 신랑신부 혼주 -->
+			<div class="Profile_icon" style="margin-top: 13%">
+				<div class = "Profile_icon_left">
+					<div align="center">
+						<img  class = "Profile_icon_img" src="images/icon/groom_P.jpg" />
+					</div>
+				</div>
+			</div>
+			<div class="Profile_icon" style="margin-top: 13%">
+				<div class = "Profile_icon_right">
+					<div align="center">
+						<img  class = "Profile_icon_img" src="images/icon/bride_P.jpg" />
+					</div>
+				</div>
+			</div>
+			
+			<!-- 신랑 부 -->
+			<div class="Profile_icon" style="margin-top: 10%">
+				<div class = "Profile_icon_left">
+					<div align="center">
+						<img class="Profile_icon_img" src="images/icon/groom_F.jpg" />
+					</div>
+					<div class = "btn_icon">
+						<a href="tel:010-9395-1757"><img align="right" class="btn_icon_img_1" src="images/icon/phone.jpg" /></a>
+					</div>
+					<div class = "btn_icon">
+						<a href="sms:010-9395-1757"><img align="left" class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 신부 부 -->
+			<div class="Profile_icon" style="margin-top: 10%">
+				<div class = "Profile_icon_left">
+					<div align="center">
+						<img class="Profile_icon_img" src="images/icon/bride_F.jpg" />
+					</div>
+					<div class = "btn_icon">
+						<a href="tel:010-9395-1757"><img align="right" class="btn_icon_img_1" src="images/icon/phone.jpg" /></a>
+					</div>
+					<div class = "btn_icon">
+						<a href="sms:010-9395-1757"><img align="left" class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 신랑 모 -->
+			<div class="Profile_icon" style="margin-top: 8%">
+				<div class = "Profile_icon_left">
+					<div align="center">
+						<img class="Profile_icon_img" src="images/icon/groom_M.jpg" />
+					</div>
+					<div class = "btn_icon">
+						<a href="tel:010-9395-1757"><img align="right" class="btn_icon_img_1" src="images/icon/phone.jpg" /></a>
+					</div>
+					<div class = "btn_icon">
+						<a href="sms:010-9395-1757"><img align="left" class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 신부 모 -->
+			<div class="Profile_icon" style="margin-top: 8%">
+				<div class = "Profile_icon_left">
+					<div align="center">
+						<img class="Profile_icon_img" src="images/icon/bride_M.jpg" />
+					</div>
+					<div class = "btn_icon">
+						<a href="tel:010-9395-1757"><img align="right" class="btn_icon_img_1" src="images/icon/phone.jpg" /></a>
+					</div>
+					<div class = "btn_icon">
+						<a href="sms:010-9395-1757"><img align="left" class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 
+			<img class="Profile_icon_img" src="images/icon/groom_P.jpg" />
+				<div class="bnt_icon">
+					<a href="tel:010-9395-1757"><img class="btn_icon_img_1"
+						src="images/icon/phone.jpg" /></a><a href="tel:010-9395-1757"><img
+						class="btn_icon_img_2" src="images/icon/phone.jpg" /></a><a
+						href="sms:010-9395-1757"><img class="btn_icon_img_1"
+						src="images/icon/sms.jpg" /></a><a href="sms:010-9395-1757"><img
+						class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+				</div> -->
+				
+			<!-- <div class="Profile_icon" style="margin-top: 250px">
+				<img class="Profile_icon_img" src="images/icon/bride_P.jpg" />
+				<div class="bnt_icon">
+					<a href="tel:010-3493-9301"><img class="btn_icon_img_1"
+						src="images/icon/phone.jpg" /></a><a href="tel:010-3493-9301"><img
+						class="btn_icon_img_2" src="images/icon/phone.jpg" /></a><a
+						href="sms:010-3493-9301"><img class="btn_icon_img_1"
+						src="images/icon/sms.jpg" /></a><a href="sms:010-3493-9301"><img
+						class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+				</div>
+			</div> -->
 		</div>
-	</footer>
+
+		<footer id="fh5co-footer" role="contentinfo">
+			<div class="container">
+				<div class="row copyright">
+					<div class="col-md-12 text-center">
+						<img class="fh5co-img" src="images/icon/copyright.jpg" />
+					</div>
+				</div>
+
+
+			</div>
+		</footer>
 	</div>
 
 	<div class="gototop js-top">
