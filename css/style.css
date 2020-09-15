@@ -1871,7 +1871,7 @@ form label {
 .Profile_icon{
 	max-width: 100%;
   	height: auto;
-	background-image : url('images/icon/background_color.jpg'); 
+	background-image : url('../images/icon/background_color.jpg'); 
 	background-position:center;
 	background-repeat:no-repeat;
 	background-attachment:fixed;  
