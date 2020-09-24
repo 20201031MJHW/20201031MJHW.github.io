@@ -17,6 +17,7 @@ body {
   line-height: 1.7;
   color: #828282;
   background: #fff;
+/*   min-width: 100vw; */
 }
 
 #page {
@@ -225,7 +226,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter,
 #fh5co-event,
 .fh5co-bg {
-  background-image: url('../images/icon/background_color.jpg');
+  /* background-image: url('../images/icon/background_color.jpg'); */
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -1871,10 +1872,10 @@ form label {
 .Profile_icon{
 	max-width: 100%;
   	height: auto;
-	background-image : url('../images/icon/background_color.jpg'); 
+	/* background-image : url('../images/icon/background_color.jpg'); 
 	background-position:center;
 	background-repeat:no-repeat;
-	background-attachment:fixed;  
+	background-attachment:fixed; */  
 	display: inline;
 	float: left;
 	width : 50%;
@@ -1929,10 +1930,169 @@ form label {
 	padding-top : 10%; */
 }
 
+.map_icon_container{
+	text-align : center;
+	float: left;
+	width:50%;
+	height : 100%;
+	/* background-image: url('../images/icon/map_back_kakao.jpg'); 
+	 background-repeat: no-repeat; 
+	 background-size: contain; */
+}
+
+.map_icon{
+	margin-top: 10%;
+}
+.map_icon_img{
+	width: 25%;
+}
+.map_name{
+	margin-top : 3%;
+}
+
+/* .gallery-img{
+	max-width : 100%;
+}
+ */
+ 
+ 
+ .wedding-gallery>ul {
+	margin-bottom: 0;
+}
+
+.wedding-gallery>ul>li {
+	float: left;
+	/*margin-bottom: 15px;
+	margin-right: 20px; 
+	width: 200px; */
+}
+
+.wedding-gallery>ul>li a {
+	border: 3px solid #FFF;
+	border-radius: 3px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+
+.wedding-gallery>ul>li a>img {
+	-webkit-transition: -webkit-transform 0.15s ease 0s;
+	-moz-transition: -moz-transform 0.15s ease 0s;
+	-o-transition: -o-transform 0.15s ease 0s;
+	transition: transform 0.15s ease 0s;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	height: 100%;
+	width: 100%;
+}
+
+.wedding-gallery>ul>li a:hover>img {
+	-webkit-transform: scale3d(1.1, 1.1, 1.1);
+	transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.wedding-gallery>ul>li a:hover .wedding-gallery-poster>img {
+	opacity: 1;
+}
+
+.wedding-gallery>ul>li a .wedding-gallery-poster {
+	background-color: rgba(0, 0, 0, 0.1);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: background-color 0.15s ease 0s;
+	-o-transition: background-color 0.15s ease 0s;
+	transition: background-color 0.15s ease 0s;
+}
+
+.wedding-gallery>ul>li a .wedding-gallery-poster>img {
+	left: 50%;
+	margin-left: -10px;
+	margin-top: -10px;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: opacity 0.3s ease 0s;
+	-o-transition: opacity 0.3s ease 0s;
+	transition: opacity 0.3s ease 0s;
+}
+
+.wedding-gallery>ul>li a:hover .wedding-gallery-poster {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wedding-gallery .justified-gallery>a>img {
+	-webkit-transition: -webkit-transform 0.15s ease 0s;
+	-moz-transition: -moz-transform 0.15s ease 0s;
+	-o-transition: -o-transform 0.15s ease 0s;
+	transition: transform 0.15s ease 0s;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	height: 100%;
+	width: 100%;
+}
+
+.wedding-gallery .justified-gallery>a:hover>img {
+	-webkit-transform: scale3d(1.1, 1.1, 1.1);
+	transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.wedding-gallery .justified-gallery>a:hover .wedding-gallery-poster>img
+	{
+	opacity: 1;
+}
+
+.wedding-gallery .justified-gallery>a .wedding-gallery-poster {
+	background-color: rgba(0, 0, 0, 0.1);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: background-color 0.15s ease 0s;
+	-o-transition: background-color 0.15s ease 0s;
+	transition: background-color 0.15s ease 0s;
+}
+
+.wedding-gallery .justified-gallery>a .wedding-gallery-poster>img {
+	left: 50%;
+	margin-left: -10px;
+	margin-top: -10px;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: opacity 0.3s ease 0s;
+	-o-transition: opacity 0.3s ease 0s;
+	transition: opacity 0.3s ease 0s;
+}
+
+.wedding-gallery .justified-gallery>a:hover .wedding-gallery-poster {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wedding-gallery .video .wedding-gallery-poster img {
+	height: 48px;
+	margin-left: -24px;
+	margin-top: -24px;
+	opacity: 0.8;
+	width: 48px;
+}
+
+.wedding-gallery.dark>ul>li a {
+	border: 3px solid #04070a;
+}
+
+.wedding-gallery {
+	padding-bottom: 80px;
+}
+
 .customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
 .customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
 .customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
-.customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;}
+.customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:6px 15px;font-size:10px;font-weight:bold;}
 .customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
-
+.baguetteBox-button svg {width : 50; height : 50;}
 /*# sourceMappingURL=style.css.map */
