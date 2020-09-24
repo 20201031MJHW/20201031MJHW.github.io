@@ -11,7 +11,7 @@
 
 <title>[김명진♡김혜원 결혼합니다 - 모시는글]</title>
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Facebook and Twitter integration -->
 <!-- <meta property="og:title" content="" />
@@ -56,8 +56,12 @@
 
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-<link rel="stylesheet" href="css/gallery-grid.css">
+
+<!-- light Gallery -->
+<!-- <link href="css/lightgallery.css" rel="stylesheet"> -->
+
+<!-- Fancy Box -->
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
 </head>
 <body>
 	<div class="fh5co-loader"></div>
@@ -73,70 +77,31 @@
 				<img class="fh5co-img" src="images/MJHW/calendar.jpg">
 			</div>
 		</div>
-		<div id="fh5co-event" class="fh5co-bg" style = "margin-top:8%;">
+		<div id="fh5co-event" class="fh5co-bg" style="margin-top: 8%;">
 			<div class="fn5co-div-img">
 				<img class="fh5co-img" src="images/MJHW/gallery.jpg">
 			</div>
 		</div>
 
-		<!-- 포토갤러리 -->
-		<div>
-			<div class="gallery-container" style="margin-top: 10%;">
-				<div class="tz-gallery">
 
-					<div class="row">
-						<div class="col-sm-6 col-md-4">
-							<a class="lightbox" href="images/gallery/G_1.jpg"> <img src="images/gallery/G_1.jpg">
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a class="lightbox" href="images/gallery/G_2.jpg"> <img src="images/gallery/G_2.jpg">
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a class="lightbox" href="images/gallery/G_3.jpg"> <img src="images/gallery/G_3.jpg">
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a class="lightbox" href="images/gallery/G_4.jpg"> <img src="images/gallery/G_4.jpg">
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a class="lightbox" href="images/gallery/G_5.jpg"> <img src="images/gallery/G_5.jpg">
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a class="lightbox" href="images/gallery/G_6.jpg"> <img src="images/gallery/G_6.jpg">
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a class="lightbox" href="images/gallery/G_7.jpg"> <img src="images/gallery/G_7.jpg">
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a class="lightbox" href="images/gallery/G_8.jpg"> <img src="images/gallery/G_8.jpg">
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a class="lightbox" href="images/gallery/G_9.jpg"> <img src="images/gallery/G_9.jpg">
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a class="lightbox" href="images/gallery/G_10.jpg"> <img src="images/gallery/G_10.jpg">
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a class="lightbox" href="images/gallery/G_11.jpg"> <img src="images/gallery/G_11.jpg">
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a class="lightbox" href="images/gallery/G_12.jpg"> <img src="images/gallery/G_12.jpg">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
+		<!-- 포토갤러리 Facy Box 시작  -->
+		<div class="wedding-gallery">
+			<ul id="lightgallery" class="list-unstyled row">
+				<li class="col-xs-6 col-sm-4 col-md-3"><a class="lightbox" href="images/gallery/G_1.jpg" data-fancybox="gallery" data-caption="웨딩사진"> <img src="images/gallery/thumnail/thum_G_1.jpg" alt="" /></a></li>
+				<li class="col-xs-6 col-sm-4 col-md-3"><a class="lightbox" href="images/gallery/G_2.jpg" data-fancybox="gallery" data-caption="웨딩사진"> <img src="images/gallery/thumnail/thum_G_2.jpg" alt="" /></a></li>
+				<li class="col-xs-6 col-sm-4 col-md-3"><a class="lightbox" href="images/gallery/G_3.jpg" data-fancybox="gallery" data-caption="웨딩사진"> <img src="images/gallery/thumnail/thum_G_3.jpg" alt="" /></a></li>
+				<li class="col-xs-6 col-sm-4 col-md-3"><a class="lightbox" href="images/gallery/G_4.jpg" data-fancybox="gallery" data-caption="웨딩사진"> <img src="images/gallery/thumnail/thum_G_4.jpg" alt="" /></a></li>
+				<li class="col-xs-6 col-sm-4 col-md-3"><a class="lightbox" href="images/gallery/G_5.jpg" data-fancybox="gallery" data-caption="웨딩사진"> <img src="images/gallery/thumnail/thum_G_5.jpg" alt="" /></a></li>
+				<li class="col-xs-6 col-sm-4 col-md-3"><a class="lightbox" href="images/gallery/G_6.jpg" data-fancybox="gallery" data-caption="웨딩사진"> <img src="images/gallery/thumnail/thum_G_6.jpg" alt="" /></a></li>
+				<li class="col-xs-6 col-sm-4 col-md-3"><a class="lightbox" href="images/gallery/G_7.jpg" data-fancybox="gallery" data-caption="웨딩사진"> <img src="images/gallery/thumnail/thum_G_7.jpg" alt="" /></a></li>
+				<li class="col-xs-6 col-sm-4 col-md-3"><a class="lightbox" href="images/gallery/G_8.jpg" data-fancybox="gallery" data-caption="웨딩사진"> <img src="images/gallery/thumnail/thum_G_8.jpg" alt="" /></a></li>
+				<li class="col-xs-6 col-sm-4 col-md-3"><a class="lightbox" href="images/gallery/G_9.jpg" data-fancybox="gallery" data-caption="웨딩사진"> <img src="images/gallery/thumnail/thum_G_9.jpg" alt="" /></a></li>
+				<li class="col-xs-6 col-sm-4 col-md-3"><a class="lightbox" href="images/gallery/G_10.jpg" data-fancybox="gallery" data-caption="웨딩사진"> <img src="images/gallery/thumnail/thum_G_10.jpg" alt="" /></a></li>
+				<li class="col-xs-6 col-sm-4 col-md-3"><a class="lightbox" href="images/gallery/G_11.jpg" data-fancybox="gallery" data-caption="웨딩사진"> <img src="images/gallery/thumnail/thum_G_11.jpg" alt="" /></a></li>
+				<li class="col-xs-6 col-sm-4 col-md-3"><a class="lightbox" href="images/gallery/G_12.jpg" data-fancybox="gallery" data-caption="웨딩사진"> <img src="images/gallery/thumnail/thum_G_12.jpg" alt="" /></a></li>
+			</ul>
 		</div>
+		<!-- 포토갤러리 Facy Box 끝  -->
 		<div id="fh5co-event" class="fh5co-bg">
 			<div class="fn5co-div-img">
 				<img class="fh5co-img" src="images/MJHW/notification.jpg">
@@ -148,18 +113,24 @@
 			</div>
 		</div>
 		<div id="fh5co-event" class="fh5co-bg">
-			<div id="map" style="width: 100%; height: 500px;"></div>
+			<div id="map" style="width: 100%; height: 300px;"></div>
 
 		</div>
-		 <div id="fh5co-event" class="fh5co-bg" style = "height: 300px;">
-			<div class="map_icon_container_left">
+		<div id="fh5co-event" class="fh5co-bg">
+			<div class="map_icon_container">
 				<div class="map_icon">
 					<a href="navermaps://?menu=location&pinType=place&lat=35.561517&lng=129.348001&title=동천컨벤션"><img class="map_icon_img" align="middle" src="images/icon/naver_map.png" /></a>
 				</div>
+				<div class="map_name">
+					<img class="map_icon_img" align="middle" src="images/icon/map_naver.png" />
+				</div>
 			</div>
-			<div class="map_icon_container_right">
-				<div class = "map_icon">
+			<div class="map_icon_container">
+				<div class="map_icon">
 					<a href="daummaps://search?q=동천컨벤션웨딩홀&p=35.561517,129.348001"><img class="map_icon_img" align="middle" src="images/icon/kakao_map.png" /></a>
+				</div>
+				<div class="map_name">
+					<img class="map_icon_img" align="middle" src="images/icon/map_kakao.png" />
 				</div>
 			</div>
 		</div>
@@ -174,13 +145,13 @@
 			<div class="Profile_icon">
 				<div class="Profile_icon_left">
 					<div align="center">
-						<img class="Profile_icon_img" src="images/icon/groom.jpg" />
+						<img class="Profile_icon_img" src="images/icon/groom.png" />
 					</div>
 					<div class="btn_icon">
-						<a href="tel:010-9395-1757"><img align="right" class="btn_icon_img_1" src="images/icon/phone.jpg" /></a>
+						<a href="tel:010-9395-1757"><img align="right" class="btn_icon_img_1" src="images/icon/phone.png" /></a>
 					</div>
 					<div class="btn_icon">
-						<a href="sms:010-9395-1757"><img align="left" class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+						<a href="sms:010-9395-1757"><img align="left" class="btn_icon_img_2" src="images/icon/sms.png" /></a>
 					</div>
 				</div>
 			</div>
@@ -188,13 +159,13 @@
 			<div class="Profile_icon">
 				<div class="Profile_icon_right">
 					<div align="center">
-						<img class="Profile_icon_img" src="images/icon/bride.jpg" />
+						<img class="Profile_icon_img" src="images/icon/bride.png" />
 					</div>
 					<div class="btn_icon">
-						<a href="tel:010-3493-9301"><img align="right" class="btn_icon_img_1" src="images/icon/phone.jpg" /></a>
+						<a href="tel:010-3493-9301"><img align="right" class="btn_icon_img_1" src="images/icon/phone.png" /></a>
 					</div>
 					<div class="btn_icon">
-						<a href="sms:010-3493-9301"><img align="left" class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+						<a href="sms:010-3493-9301"><img align="left" class="btn_icon_img_2" src="images/icon/sms.png" /></a>
 					</div>
 				</div>
 			</div>
@@ -202,14 +173,14 @@
 			<div class="Profile_icon" style="margin-top: 13%">
 				<div class="Profile_icon_left">
 					<div align="center">
-						<img class="Profile_icon_img" src="images/icon/groom_P.jpg" />
+						<img class="Profile_icon_img" src="images/icon/groom_P.png" />
 					</div>
 				</div>
 			</div>
 			<div class="Profile_icon" style="margin-top: 13%">
 				<div class="Profile_icon_right">
 					<div align="center">
-						<img class="Profile_icon_img" src="images/icon/bride_P.jpg" />
+						<img class="Profile_icon_img" src="images/icon/bride_P.png" />
 					</div>
 				</div>
 			</div>
@@ -218,13 +189,13 @@
 			<div class="Profile_icon" style="margin-top: 10%">
 				<div class="Profile_icon_left">
 					<div align="center">
-						<img class="Profile_icon_img" src="images/icon/groom_F.jpg" />
+						<img class="Profile_icon_img" src="images/icon/groom_F.png" />
 					</div>
 					<div class="btn_icon">
-						<a href="tel:010-6563-5123"><img align="right" class="btn_icon_img_1" src="images/icon/phone.jpg" /></a>
+						<a href="tel:010-6563-5123"><img align="right" class="btn_icon_img_1" src="images/icon/phone.png" /></a>
 					</div>
 					<div class="btn_icon">
-						<a href="sms:010-6563-5123"><img align="left" class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+						<a href="sms:010-6563-5123"><img align="left" class="btn_icon_img_2" src="images/icon/sms.png" /></a>
 					</div>
 				</div>
 			</div>
@@ -233,13 +204,13 @@
 			<div class="Profile_icon" style="margin-top: 10%">
 				<div class="Profile_icon_left">
 					<div align="center">
-						<img class="Profile_icon_img" src="images/icon/bride_F.jpg" />
+						<img class="Profile_icon_img" src="images/icon/bride_F.png" />
 					</div>
 					<div class="btn_icon">
-						<a href="tel:010-3562-9599"><img align="right" class="btn_icon_img_1" src="images/icon/phone.jpg" /></a>
+						<a href="tel:010-3562-9599"><img align="right" class="btn_icon_img_1" src="images/icon/phone.png" /></a>
 					</div>
 					<div class="btn_icon">
-						<a href="sms:010-3562-9599"><img align="left" class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+						<a href="sms:010-3562-9599"><img align="left" class="btn_icon_img_2" src="images/icon/sms.png" /></a>
 					</div>
 				</div>
 			</div>
@@ -248,13 +219,13 @@
 			<div class="Profile_icon" style="margin-top: 8%">
 				<div class="Profile_icon_left">
 					<div align="center">
-						<img class="Profile_icon_img" src="images/icon/groom_M.jpg" />
+						<img class="Profile_icon_img" src="images/icon/groom_M.png" />
 					</div>
 					<div class="btn_icon">
-						<a href="tel:010-8564-0590"><img align="right" class="btn_icon_img_1" src="images/icon/phone.jpg" /></a>
+						<a href="tel:010-8564-0590"><img align="right" class="btn_icon_img_1" src="images/icon/phone.png" /></a>
 					</div>
 					<div class="btn_icon">
-						<a href="sms:010-8564-0590"><img align="left" class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+						<a href="sms:010-8564-0590"><img align="left" class="btn_icon_img_2" src="images/icon/sms.png" /></a>
 					</div>
 				</div>
 			</div>
@@ -263,13 +234,13 @@
 			<div class="Profile_icon" style="margin-top: 8%">
 				<div class="Profile_icon_left">
 					<div align="center">
-						<img class="Profile_icon_img" src="images/icon/bride_M.jpg" />
+						<img class="Profile_icon_img" src="images/icon/bride_M.png" />
 					</div>
 					<div class="btn_icon">
-						<a href="tel:010-9533-2998"><img align="right" class="btn_icon_img_1" src="images/icon/phone.jpg" /></a>
+						<a href="tel:010-9533-2998"><img align="right" class="btn_icon_img_1" src="images/icon/phone.png" /></a>
 					</div>
 					<div class="btn_icon">
-						<a href="sms:010-9533-2998"><img align="left" class="btn_icon_img_2" src="images/icon/sms.jpg" /></a>
+						<a href="sms:010-9533-2998"><img align="left" class="btn_icon_img_2" src="images/icon/sms.png" /></a>
 					</div>
 				</div>
 			</div>
@@ -296,8 +267,6 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Carousel -->
 	<script src="js/owl.carousel.min.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
 
 	<!-- 3d falling -->
 	<script src="js/rotate3Di.js" type="text/javascript"></script>
@@ -311,44 +280,65 @@
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
-	<!-- gallery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+	<!-- kakao Map -->
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=43ddd1fa336e35a91ff845d9f0e91a7c"></script>
+	
+	
+	
+	
+	<!-- light Gallery -->
+	<!-- <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+	<script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+	<script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+	<script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
+	<script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+	<script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+	<script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
+	<script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>  공유 버튼
+	<script src="js/lg-rotate.js"></script>
+	<script src="js/lg-thumbnail.js"></script> -->
+	
+	
+	<!-- Fancy Box -->
+	<script src="js/fancy/jquery.fancybox.min.js"></script>
 	<script>
-		
-		$(document).ready(function(){
-			/* 갤러리 로딩 */
-		    baguetteBox.run('.tz-gallery');
-		    
-		   /*   jQuery(document).octoberLeaves();
-		    
-		    //창 사이즈 변경시 
+	
+		$(document).ready(function() {
+			// 갤러리 로딩
+			$('.lightbox').fancybox();
+				
+			// 낙엽 효과	
+
+			/*      jQuery(document).octoberLeaves();
+			  
+			  //창 사이즈 변경시 
 			$(window).resize(function() {
 				jQuery(document).octoberLeaves(); 
-			});   */
+			});  */
 		})
-		
+
+
 		// 카카오 맵 
 		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 		mapOption = {
 			center : new kakao.maps.LatLng(35.561517, 129.348001), // 지도의 중심좌표
-			draggable: false, // 지도 드레그 설정
-			level : 2
+			draggable : false, // 지도 드레그 설정
+			level : 5
 		// 지도의 확대 레벨
 		};
 
 		var map = new kakao.maps.Map(mapContainer, mapOption);
 
 		var imageSrc = 'images/icon/marker.png', // 마커이미지의 주소입니다    
-		imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
+		imageSize = new kakao.maps.Size(50, 55), // 마커이미지의 크기입니다
 		imageOption = {
 			offset : new kakao.maps.Point(27, 69)
 		}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
 
 		// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-		var markerImage = new kakao.maps.MarkerImage(imageSrc,
-				imageSize, imageOption), markerPosition = new kakao.maps.LatLng(
-				35.561517, 129.348001); // 마커가 표시될 위치입니다
+		var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize,
+				imageOption), markerPosition = new kakao.maps.LatLng(35.561517,
+				129.348001); // 마커가 표시될 위치입니다
 
 		// 마커를 생성합니다
 		var marker = new kakao.maps.Marker({
@@ -361,10 +351,9 @@
 		marker.setMap(map);
 
 		// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-		var content = '<div class="customoverlay" style="width: 107%">'
+		var content = '<div class="customoverlay" style="width: 100%">'
 				+ '  <a href="https://map.kakao.com/link/map/1486209965" target="_blank">'
-				+ '    <span class="title">동천컨벤션</span>' + '  </a>'
-				+ '</div>';
+				+ '    <span class="title">동천컨벤션</span>' + '  </a>' + '</div>';
 
 		// 커스텀 오버레이가 표시될 위치입니다 
 		var position = new kakao.maps.LatLng(35.561517, 129.348001);
