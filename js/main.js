@@ -219,13 +219,13 @@
 		parallax();
 //		offcanvasMenu();
 		burgerMenu();
-		contentWayPoint();
+//		contentWayPoint();
 		dropdown();
 		testimonialCarousel();
 		goToTop();
 		loaderPage();
-		counter();
-		counterWayPoint();
+//		counter();
+//		counterWayPoint();
 	});
 
 
