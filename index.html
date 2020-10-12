@@ -133,8 +133,8 @@
 			</div>
 			<div class="map_icon_container">
 				<div class="map_icon">
-					
 					<!-- <a href="kakaomap://search?q=동천컨벤션웨딩홀&p=35.561517,129.348001"><img class="map_icon_img" align="middle" src="images/icon/kakao_map.png" /></a> -->
+					<!-- <a href="https://map.kakao.com/link/search/동천컨벤션웨딩홀"><img class="map_icon_img" align="middle" src="images/icon/kakao_map.png" /></a> -->
 					<a href="https://map.kakao.com/link/search/동천컨벤션웨딩홀"><img class="map_icon_img" align="middle" src="images/icon/kakao_map.png" /></a>
 				</div>
 				<div class="map_name">
@@ -145,7 +145,7 @@
 		
 		
 		<!-- 오시는길 -->
-		<div id="fh5co-event" class="fh5co-bg">
+		<div id="fh5co-event" class="fh5co-bg" style="margin-top: 10%;">
 			<div class="fn5co-div-img">
 				<img class="fh5co-img" src="images/MJHW/addressInfo.jpg">
 			</div>
@@ -256,12 +256,52 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div id="fh5co-event" class="fh5co-bg" style="padding-top: 15%; background-image: url('../images/icon/background_color.jpg');">
+			<!-- 계좌번호 -->
+			<div class="account_noti">
+				<div align="center">
+					<img class="account_icon" src="images/MJHW/accountInfo.png">
+				</div>
+
+			</div>
+
+			<!-- 신랑계좌 -->
+			<div class="Profile_icon" style="margin-top: 17%">
+				<div class="Profile_icon_left">
+					<div align="center">
+						<img class="account_info" src="images/MJHW/groom_account.png">
+					</div>
+				</div>
+				<div class="Profile_icon_left">
+					<div align="center">
+						<a href="javascript:;" class="clipboard" data-clipboard-action="copy" data-clipboard-text="3028564059051"><img align="middle" class="account_icon_btn" src="images/icon/accountBtn.png" /></a>
+					</div>
+				</div>
+			</div>
+			<!-- 신부계좌 -->
+			<div class="Profile_icon" style="margin-top: 17%">
+				<div class="Profile_icon_right">
+					<div align="center">
+						<img class="account_info" src="images/MJHW/bride_account.png">
+					</div>
+				</div>
+				<div class="Profile_icon_right">
+					<div align="center">
+						<a href="javascript:;" class="clipboard" data-clipboard-action="copy" data-clipboard-text="6216100090504"><img align="middle" class="account_icon_btn" src="images/icon/accountBtn.png" /></a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- COPY RIGHT -->
 			<div id="fh5co-event" class="fh5co-bg" style="margin-top: 10%">
 				<div class="fn5co-div-img">
 					<img class="fh5co-img" src="images/MJHW/copyright.jpg">
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<div class="gototop js-top">
@@ -312,6 +352,8 @@
 	
 	<!-- Fancy Box -->
 	<script src="js/fancy/jquery.fancybox.min.js"></script>
+	<!-- clipboard -->
+	<script src="js/clipboard.min.js"></script>
 	<script>
 	
 		$(document).ready(function() {
@@ -322,17 +364,16 @@
 		    $(document).bind("contextmenu", function(e) {
 		        return false;
 		     });
-				
-			// 낙엽 효과	
-
-			/*      jQuery(document).octoberLeaves();
-			  
-			  //창 사이즈 변경시 
-			$(window).resize(function() {
-				jQuery(document).octoberLeaves(); 
-			});  */
 		})
-
+		
+		//클립보드 이벤트 
+		var clipboard = new Clipboard('.clipboard');
+		clipboard.on('success', function(e){
+			alert("복사되었습니다.");
+		});
+		clipboard.on('error', function(e){
+			alert("실패하였습니다.");
+		});
 
 		// 카카오 맵 
 		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
